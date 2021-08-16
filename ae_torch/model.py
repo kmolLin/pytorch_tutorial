@@ -88,8 +88,7 @@ if __name__ == '__main__':
 
     #Optimizer
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-    # model.cuda()
-    # summary(model, [(3, 512, 512)])
+    summary(model, [(3, 512, 512)])
     batch_size = 5
 
     train_x = Pre_dataset("dataset", transform=transforms.ToTensor())
