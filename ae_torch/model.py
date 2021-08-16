@@ -123,5 +123,5 @@ if __name__ == '__main__':
         train_loss = train_loss / len(trainx_loader)
         print('Epoch: {} \tTraining Loss: {:.6f}'.format(epoch, train_loss))
 
-    # torch.save(model.state_dict(), "test1.pt")
+    torch.save(model.state_dict(), "test1.pt")
 
