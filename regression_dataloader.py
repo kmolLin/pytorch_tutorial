@@ -32,6 +32,7 @@ if __name__ == "__main__":
         torch.nn.LeakyReLU(),
         torch.nn.Linear(100, 1),
     )
+
     net.to(device)
 
     optimizer = torch.optim.Adam(net.parameters(), lr=0.01)

@@ -40,6 +40,7 @@ if __name__ == "__main__":
 
 
     net = Net(n_feature=1, n_hidden=10, n_output=1)  # define the network
+
     net.to(device)
     # print(net)  # net architecture
     optimizer = torch.optim.SGD(net.parameters(), lr=0.2)

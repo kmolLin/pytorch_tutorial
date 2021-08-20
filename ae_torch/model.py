@@ -95,9 +95,9 @@ if __name__ == '__main__':
 
     test_x = Pre_dataset("dataset_test", transform=transforms.ToTensor())
 
-    trainx_loader = DataLoader(train_x, batch_size=batch_size, shuffle=True)
+    trainx_loader = DataLoader(train_x, batch_size=batch_size, shuffle=True, num_workers=8)
 
-    testx_loader = DataLoader(test_x, batch_size=batch_size, shuffle=False)
+    testx_loader = DataLoader(test_x, batch_size=batch_size, shuffle=False, num_workers=8)
 
     n_epochs = 50
     # Training code
