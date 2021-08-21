@@ -16,7 +16,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 if __name__ == "__main__":
 
     model = ConvAutoencoder().to(device)
-    model.load_state_dict(torch.load("test.pt"))
+    model.load_state_dict(torch.load("test1.pt"))
     model.eval()
 
     batch_size = 1
