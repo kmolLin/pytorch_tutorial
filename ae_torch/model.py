@@ -92,6 +92,8 @@ if __name__ == '__main__':
     batch_size = 5
 
     train_x = Pre_dataset("dataset", transform=transforms.ToTensor())
+    
+    print(train_x[0])
 
     test_x = Pre_dataset("dataset_test", transform=transforms.ToTensor())
 
@@ -99,6 +101,7 @@ if __name__ == '__main__':
 
     testx_loader = DataLoader(test_x, batch_size=batch_size, shuffle=False, num_workers=8)
 
+    exit()
     n_epochs = 50
     # Training code
     for epoch in range(1, n_epochs + 1):
